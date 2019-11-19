@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/bg_layout_white">
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:text="@string/title_movie"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_title_movie"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:background="#EDEDED"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/daterelease" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/genre" />
+
+</RelativeLayout>
